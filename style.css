@@ -18,7 +18,10 @@ display: flex;
 flex-wrap: wrap;
  /*   justify-content: space-around; */
 } 
-
+.contact-section{
+display: flex; 
+  justify-content: space-around;
+}
  .topnav {
   list-style-type: none;
   margin: 0;
