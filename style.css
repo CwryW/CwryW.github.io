@@ -1,0 +1,107 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+margin: 0;
+   background-image:url("http://www.trakoscan.hr/images/zbirka-knjiga.png");
+
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center;  
+   background-repeat: repeat; /* Do not repeat the image */
+   background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+ 
+
+ .topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color:black;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active{
+  background-color: green;
+  color: white;
+}
+ .btn:hover {
+  background-color: green;
+  color: white;
+}
+  
+
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+
+
+div.gallery {
+color: white;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+ 
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 50%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer,.fab,.fas{
+  color:#ADD8E6;
+  font-size: 10px;
+}
