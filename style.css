@@ -19,9 +19,8 @@ flex-wrap: wrap;
  /*   justify-content: space-around; */
 } 
 .contact-section{
-display: flex; 
-margin: auto;
-  padding: 10px;
+display: flex;
+  justify-content: center;
 }
  .topnav {
   list-style-type: none;
