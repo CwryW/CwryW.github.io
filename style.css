@@ -15,7 +15,8 @@ margin: 0;
 
 #projects{
 display: flex;  
-flex-wrap: wrap;
+/* flex-wrap: wrap; */
+   justify-content: space-around;
 } 
 
  .topnav {
