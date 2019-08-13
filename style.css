@@ -69,7 +69,7 @@ color: white;
 
 div.gallery:hover {
   border: 1px solid #777;
-  background-color: yellow;
+  color: lime;
 }
 
 div.gallery img {
