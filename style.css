@@ -13,7 +13,9 @@ margin: 0;
    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
- 
+#projects{
+display: flex;
+} 
 
  .topnav {
   list-style-type: none;
