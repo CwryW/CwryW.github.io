@@ -20,7 +20,7 @@ flex-wrap: wrap;
 } 
 .contact-section{
 display: flex; 
-  justify-content: space-around;
+  justify-content: center;
 }
  .topnav {
   list-style-type: none;
