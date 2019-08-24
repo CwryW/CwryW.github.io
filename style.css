@@ -51,17 +51,28 @@ ul.topnav li a {
 }
 
 h1{
-  animation: blink 1s infinite;
-}
-
-  
-@keyframes blink{
-  0%{opacity:0;}
-  40%{opacity:0;}
-  50%{opacity:1}
-  90%{opacity:1}
-  100%{opacity:0;}
-}
+ 
+                animation: cursor 1s infinite;
+            }
+    
+            @keyframes cursor {
+                0% {
+                    opacity: 0;
+                }
+                40% {
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 1;
+                }
+                90% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+        
 
 .welcome-section {
   display: flex;
