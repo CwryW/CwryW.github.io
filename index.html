@@ -40,7 +40,8 @@
   </ul>
   </nav>
 
-  <script>  
+  <script> 
+   
    var myNav = document.getElementById("mynav");
 var btn = myNav.getElementsByClassName("btn");
 for (var i = 0; i < btn.length; i++) {
@@ -51,41 +52,8 @@ for (var i = 0; i < btn.length; i++) {
   });
 }
    
-    var canvas = document.getElementById("canvas");
-        var ctx = c.getContext("2d"); 
-        c.height = window.innerHeight;
-        c.width = window.innerWidth;
- 
-        var matrix = "Welcome to CwryW's Personal Portfolio";
-        
-        matrix = matrix.split("");
-
-        var font_size = 12;
-        var columns = c.width / font_size; 
-        var drops = [];  
-        for(var x = 0; x < columns; x++){
-            drops[x] = 1; 
- 
-        function draw(){ 
-            ctx.fillStyle = "rgba(0, 0, 255, 0.04)";
-            ctx.fillRect(0, 0, c.width, c.height);
-
-            ctx.fillStyle = "white";  
-            ctx.font = font_size + "px roman"; 
-            for( var i = 0; i < drops.length; i++ ){ 
-       var text = matrix[ Math.floor( Math.random() * matrix.length ) ]; 
-                ctx.fillText(text, i * font_size, drops[i] * font_size);
-if( drops[i] * font_size > c.height && Math.random() > 0.9 )
-                    drops[i] = 0;
-                drops[i]++;
-            }
-        }
-}
-        setInterval( draw, 40 );
-
   </script>
-
-      <canvas id="canvas"></canvas> 
+ 
  <main>
 
   
