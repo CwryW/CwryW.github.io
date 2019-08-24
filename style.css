@@ -6,7 +6,10 @@
 
 body{
   
-/* background-image:url("http://www.trakoscan.hr/images/zbirka-knjiga.png"); */
+/* background-image:url("http://www.trakoscan.hr/images/zbirka-knjiga.png");
+   background-image: radial-gradient(red, yellow,orange );
+  
+  */
    background-image: repeating-radial-gradient(black, yellow 5%, green 15%);
  /*  background-color: #cccccc;  
   background-position: center;  
