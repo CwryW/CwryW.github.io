@@ -26,6 +26,10 @@ flex-wrap: wrap;
 display: flex;
   justify-content: center;
 }
+
+.contact-section:hover{
+font-size: 25px;
+}
  .topnav {
   list-style-type: none;
   margin: 0;
