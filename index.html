@@ -158,6 +158,14 @@ for (var i = 0; i < btn.length; i++) {
   
   </main>
   
+ <script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/sw.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
+</script> 
+  
 </body>
 
 
