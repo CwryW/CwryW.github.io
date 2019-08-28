@@ -1,17 +1,20 @@
 importScripts('/cache-polyfill.js');
 
-self.addEventListener('install', function(event) {
-  event.waitUntil(
-    caches.open('demo-cache').then(function(cache) {
-      return cache.put('/', new Response("From the cache!"));
-    })
-  );
+self.addEventListener('install', function(e) {
+ e.waitUntil(
+   caches.open('cwryw').then(function(cache) {
+     return cache.addAll([
+      './index.html',
+      './style.css',
+      './script.js', 
+     ]);
+   })
+ );
 });
 
+
 self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request).then(function(response) {
-      return response || new Response("Nothing in the cache for this request");
-    })
-  );
+
+console.log(event.request.url);
+
 });
