@@ -1,3 +1,5 @@
+importScripts('/cache-polyfill.js');
+
 self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open('airhorner').then(function(cache) {
@@ -7,8 +9,7 @@ self.addEventListener('install', function(e) {
        '/index.html?homescreen=1',
        '/?homescreen=1',
        '/styles/main.css',
-       '/scripts/main.min.js',
-       '/sounds/airhorn.mp3'
+       '/scripts/main.min.js', 
      ]);
    })
  );
