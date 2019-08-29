@@ -5,6 +5,7 @@ self.addEventListener('install', function(e) {
    caches.open('cwryw').then(function(cache) {
      return cache.addAll([
       '/',
+      '/?homescreen=1',
       '/index.html',
       '/style.css'
      ]);
