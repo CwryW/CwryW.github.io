@@ -4,7 +4,15 @@ const cacheName = 'cache-v1';
 const precacheResources = [
    '/', 
       '/index.html',
-      '/style.css'
+      '/style.css',
+  'images/af360.jpg',
+  'images/codeac.jpg',
+  'images/codepen.jpg',
+  'images/full stack.jpg',
+  'images/github.jpg',
+  'images/glitch.jpg',
+  'images/rsum.jpg',
+  'images/solol.jpg' 
 ];
 
 self.addEventListener('install', event => {
