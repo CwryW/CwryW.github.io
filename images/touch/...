@@ -1,0 +1,9 @@
+update(multiple): add Lighthouse 2.0 changes
+
+Updated add-to-homescreen icons for the blog app that is used in
+multiple labs. Changed the sizes of the icons to align with
+the suggested sizes in [Google documentation](https://developers.google.com/web/updates/2015/10/splashscreen)
+ and in Lighthouse 2.0 metrics. Updated the manifest files and meta
+tags accordingly. Also modified the apps link colors to meet Lighthouse
+accessibility requirements. Finally, added `lang` attribute to all
+HTML files, again to meet Lighthouse 2.0 accessibility requirements.
