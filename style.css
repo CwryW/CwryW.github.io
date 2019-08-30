@@ -17,6 +17,13 @@ body{
  background-size: cover; */  /*  */
 }
 
+.banner {
+  align-content: center;
+  display: none;
+  justify-content: center;
+  width: 100%;
+}
+
 #projects{
 display: flex;  
 flex-wrap: wrap;
