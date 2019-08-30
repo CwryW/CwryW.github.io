@@ -67,7 +67,7 @@ ul.topnav li a {
 
 h1{
  
-                animation: cursor 1s infinite;
+                animation: cursor 2s infinite;
             }
     
             @keyframes cursor {
