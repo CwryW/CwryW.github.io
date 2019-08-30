@@ -1,30 +1,32 @@
-importScripts('/cache-polyfill.js');
-
-self.addEventListener('install', function(e) {
- e.waitUntil(
-   caches.open('cwryw').then(function(cache) {
-     return cache.addAll([
-      '/', 
+const cacheName = 'cache-v1';
+const precacheResources = [
+   '/', 
       '/index.html',
       '/style.css'
-     ]);
-   })
- );
+];
+
+self.addEventListener('install', event => {
+  console.log('Service worker install event!');
+  event.waitUntil(
+    caches.open(cacheName)
+      .then(cache => {
+        return cache.addAll(precacheResources);
+      })
+  );
 });
 
+self.addEventListener('activate', event => {
+  console.log('Service worker activate event!');
+});
 
-self.addEventListener('fetch', function(event) {
-
-console.log(event.request.url);
-
-event.respondWith(
-
-caches.match(event.request).then(function(response) {
-
-return response || fetch(event.request);
-
-})
-
-);
-
+self.addEventListener('fetch', event => {
+  console.log('Fetch intercepted for:', event.request.url);
+  event.respondWith(caches.match(event.request)
+    .then(cachedResponse => {
+        if (cachedResponse) {
+          return cachedResponse;
+        }
+        return fetch(event.request);
+      })
+    );
 });
