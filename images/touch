@@ -1,2 +1,9 @@
- 
-<img src="https://camo.githubusercontent.com/4bfe0be0706d5684d075501abfb783462142ebce/68747470733a2f2f656e637279707465642d74626e302e677374617469632e636f6d2f696d616765733f713d74626e3a414e64394763527a38416e7771425247542d6245626a4e57344f5476544536763751524a353439387647496e6d4e4e454e576445465f57453177">
+update(multiple): add Lighthouse 2.0 changes
+
+Updated add-to-homescreen icons for the blog app that is used in
+multiple labs. Changed the sizes of the icons to align with
+the suggested sizes in [Google documentation](https://developers.google.com/web/updates/2015/10/splashscreen)
+ and in Lighthouse 2.0 metrics. Updated the manifest files and meta
+tags accordingly. Also modified the apps link colors to meet Lighthouse
+accessibility requirements. Finally, added `lang` attribute to all
+HTML files, again to meet Lighthouse 2.0 accessibility requirements.
