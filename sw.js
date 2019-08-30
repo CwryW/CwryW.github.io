@@ -1,4 +1,4 @@
-importScripts('/cache-polyfill.js');
+/* importScripts('/cache-polyfill.js');  */
 
 const cacheName = 'cache-v1';
 const precacheResources = [
