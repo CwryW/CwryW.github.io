@@ -35,7 +35,6 @@
   
 
 <!-- 
-
 <meta http-equiv="Cache-control" content="max-age=31557600">
  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/webfonts/fa-brands-400.woff2" />
@@ -43,7 +42,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" /> 
  
 <meta http-equiv="Cache-control" content="max-age=31557600">
-
   <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -121,7 +119,16 @@ for (var i = 0; i < btn.length; i++) {
   </div>
 </div>
 
-
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" rel="noreferrer" href="https://my.indeed.com/p/coryw-lnc7ykf/profile">
+      <img src="images/rsum.jpg" alt="Resume" width="600" height="400">
+    </a>
+    <div class="desc">Resume</div>
+  </div>
+</div>
+  
+  
  <div class="responsive">
   <div class="gallery">
     <a target="_blank" rel="noreferrer" href="https://www.codecademy.com/users/reelm/achievements">
@@ -149,17 +156,7 @@ for (var i = 0; i < btn.length; i++) {
   </div>
 </div>
    
-
 <div class="responsive">
-  <div class="gallery">
-    <a target="_blank" rel="noreferrer" href="https://jsfiddle.net/user/Cwry">
-      <img src="images/rsum.jpg" alt="jsfiddle" width="600" height="400">
-    </a>
-    <div class="desc">Jsfiddle Fiddles</div>
-  </div>
-</div>
- 
- <div class="responsive">
   <div class="gallery">
     <a target="_blank" rel="noreferrer" href="https://www.sololearn.com/Profile/7014493">
       <img src="images/solol.jpg" alt="Sololearn" width="600" height="400">
@@ -167,7 +164,6 @@ for (var i = 0; i < btn.length; i++) {
     <div class="desc">Sololearn Projects</div>
   </div>
 </div>  
- 
 </section>
 
   
@@ -198,26 +194,20 @@ for (var i = 0; i < btn.length; i++) {
       });
   });
 }
-
   
 </script> 
 
   <script>
     let deferredPrompt;
     window.addEventListener('beforeinstallprompt', event => {
-
       // Prevent Chrome 67 and earlier from automatically showing the prompt
       event.preventDefault();
-
       // Stash the event so it can be triggered later.
       deferredPrompt = event;
-
       // Attach the install prompt to a user gesture
       document.querySelector('#installBtn').addEventListener('click', event => {
-
         // Show the prompt
         deferredPrompt.prompt();
-
         // Wait for the user to respond to the prompt
         deferredPrompt.userChoice
           .then((choiceResult) => {
@@ -229,7 +219,6 @@ for (var i = 0; i < btn.length; i++) {
             deferredPrompt = null;
           });
       });
-
       // Update UI notify the user they can add to home screen
       document.querySelector('#installBanner').style.display = 'flex';
     });
