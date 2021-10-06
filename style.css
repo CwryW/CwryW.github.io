@@ -10,7 +10,7 @@ body{
    background-image: radial-gradient(red, yellow,orange );
   
   */
-   background-image: repeating-radial-gradient(black, yellow 5%, green 15%);
+   background-image: repeating-radial-gradient(grey, yellow 5%, cyan 15%);
  /*  background-color: #cccccc;  
   background-position: center;  
    background-repeat: repeat;  
